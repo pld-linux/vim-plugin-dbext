@@ -8,7 +8,6 @@ License:	GPL
 Group:		Applications/Editors/Vim
 Source0:	dbext_%{_v1}%{_v2}.zip
 # Source0-md5:	25b93ab92cc8ca3bad9cb5fa3ddbfbb1
-URL:		fixme
 Requires:	vim >= 4:6.3.058-3
 Requires:	vim-plugin-genutils
 BuildArch:	noarch
