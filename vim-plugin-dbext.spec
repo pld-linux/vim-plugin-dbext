@@ -1,6 +1,7 @@
 %define	_v1	3
 %define	_v2	50
 Summary:	Vim editor database access plugin
+Summary(pl):	Wtyczka dostêpu do baz danych dla edytora Vim
 Name:		vim-plugin-dbext
 Version:	%{_v1}.%{_v2}
 Release:	0.1
@@ -17,14 +18,19 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Plugin contains functions/mappings/commands to enable Vim to access
-several databases. Currently Mysql, PostgreSQL, Ingres, Oracle, Sybase
+several databases. Currently MySQL, PostgreSQL, Ingres, Oracle, Sybase
 Adaptive Server Anywhere, Sybase Adaptive Server Enterprise, SQLite,
 Microsoft SQL Server, DB2 and Interbase are supported.
 
+%description -l pl
+Ta wtyczka zawiera funkcje/mapowania/polecenia pozwalaj±ce na dostêp
+do ró¿nych baz danych z poziomu Vima. Aktualnie obs³ugiwane s± MySQL,
+PostgreSQL, Ingres, Oracle, Sybase Adaptive Server Anywhere, Sybase
+Adaptive Server Enterprise, SQLite, Microsoft SQL Server, DB2 i
+Interbase.
+
 %prep
 %setup -q -c
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
