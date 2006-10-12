@@ -9,7 +9,7 @@ License:	GPL
 Group:		Applications/Editors/Vim
 #Source0:	dbext_%{_v1}%{_v2}.zip
 Source0:	dbext_%{_v1}00.zip
-# Source0-md5:	25b93ab92cc8ca3bad9cb5fa3ddbfbb1
+# Source0-md5:	b843ef4383cb6af21479a01a431270f4
 URL:		http://vim.sourceforge.net/scripts/script.php?script_id=356
 Requires:	vim >= 4:7.0
 Requires:	vim-plugin-genutils
