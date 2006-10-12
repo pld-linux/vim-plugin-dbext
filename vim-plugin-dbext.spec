@@ -1,15 +1,17 @@
-%define	_v1	3
-%define	_v2	50
+%define	_v1	4
+%define	_v2	03
 Summary:	Vim editor database access plugin
 Summary(pl):	Wtyczka dostêpu do baz danych dla edytora Vim
 Name:		vim-plugin-dbext
 Version:	%{_v1}.%{_v2}
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications/Editors/Vim
-Source0:	dbext_%{_v1}%{_v2}.zip
+#Source0:	dbext_%{_v1}%{_v2}.zip
+Source0:	dbext_%{_v1}00.zip
 # Source0-md5:	25b93ab92cc8ca3bad9cb5fa3ddbfbb1
-Requires:	vim >= 4:6.3.058-3
+URL:		http://vim.sourceforge.net/scripts/script.php?script_id=356
+Requires:	vim >= 4:7.0
 Requires:	vim-plugin-genutils
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
