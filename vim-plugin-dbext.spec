@@ -1,7 +1,7 @@
 %define	_v1	4
 %define	_v2	03
 Summary:	Vim editor database access plugin
-Summary(pl.UTF-8):   Wtyczka dostępu do baz danych dla edytora Vim
+Summary(pl.UTF-8):	Wtyczka dostępu do baz danych dla edytora Vim
 Name:		vim-plugin-dbext
 Version:	%{_v1}.%{_v2}
 Release:	1
