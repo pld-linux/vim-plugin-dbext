@@ -11,6 +11,7 @@ Group:		Applications/Editors/Vim
 Source0:	dbext_%{_v1}00.zip
 # Source0-md5:	b843ef4383cb6af21479a01a431270f4
 URL:		http://vim.sourceforge.net/scripts/script.php?script_id=356
+BuildRequires:	unzip
 Requires:	vim >= 4:7.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
