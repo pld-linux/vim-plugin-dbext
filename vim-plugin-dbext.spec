@@ -44,14 +44,10 @@ cp -a doc plugin $RPM_BUILD_ROOT%{_vimdatadir}
 rm -rf $RPM_BUILD_ROOT
 
 %post
-umask 022
-echo ':helptags %{_vimdatadir}/doc' | vim -e -s
+echo 'helptags %{_vimdatadir}/doc' | vim -e -s -V0 -R -n --noplugin
 
 %postun
-if [ "$1" = 0 ]; then
-	umask 022
-	echo ':helptags %{_vimdatadir}/doc' | vim -e -s
-fi
+echo 'helptags %{_vimdatadir}/doc' | vim -e -s -V0 -R -n --noplugin
 
 %files
 %defattr(644,root,root,755)
